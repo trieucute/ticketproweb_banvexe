@@ -28,6 +28,8 @@ import ForgotPassword from './pages/auth/forgotPassword';
 import ResetPassword from './pages/auth/resetPassword';
 import PostDetail from './pages/layouts/postDetail';
 import Test from './pages/layouts/test';
+import Books from './componets/searchBook/test';
+
 
 // import Slideshows from './componets/home/slide';
 // import Indexs from './pages/layouts/auth';
@@ -47,7 +49,7 @@ function App() {
           <Route path='/lienhe' element={<Contact/>}/>
           <Route path='/test' element={<Test/>}/>
 
-          <Route path='/lichtrinh' element={<RoutersBus/>}/>
+          <Route path='/lichtrinh?' element={<RoutersBus/>}/>
 
           <Route path='/lichtrinh1chieu' element={<RoutersBusSingle/>}/>
           <Route path='/test' element={<ChairChoose/>}/>
@@ -73,7 +75,8 @@ function App() {
       </Route>
       
       <Route path='/login' element={<Signin/>}/>
-      {/* <Route path='/logins' element={<Indexs/>}/> */}
+
+      <Route path='/test' element={<Books/>}/>
 
       <Route path='/signup' element={<Signup/>}/>
       <Route exact path="/auth/google" element={<LoginGG/>} />
